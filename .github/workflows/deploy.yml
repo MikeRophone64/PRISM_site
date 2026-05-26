@@ -19,4 +19,4 @@ jobs:
           port: ${{ secrets.SSH_PORT }}
           key: ${{ secrets.SSH_PRIVATE_KEY }}
           script: |
-            rsync -avz --delete $GITHUB_WORKSPACE/ /home/www/public/wp-content/themes/hello-biz/
+            rsync -avz $GITHUB_WORKSPACE/ /home/www/public/wp-content/themes/prism-theme/
