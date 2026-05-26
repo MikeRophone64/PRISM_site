@@ -123,7 +123,7 @@ nav.scrolled {
   transition: transform 0.4s var(--ease), filter 0.4s;
 }
 .nav-logo img:hover {
-  transform: rotate(20deg) scale(1.08);
+  transform: scale(1.10);
   filter: drop-shadow(0 0 8px rgba(168,237,255,0.6));
 }
 .nav-links { display: flex; gap: 2.5rem; list-style: none; }
@@ -778,7 +778,7 @@ footer::before {
 }
 .footer-logo img:hover {
   filter: drop-shadow(0 0 10px rgba(168,237,255,0.5));
-  transform: rotate(15deg);
+  transform: scale(1.10);
 }
 .footer-mission {
   font-size: 0.73rem; font-weight: 300;

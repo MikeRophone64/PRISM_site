@@ -58,7 +58,7 @@ nav {
 .nav-logo { text-decoration: none; display: flex; align-items: center; }
 .nav-logo img { height: 40px; width: 40px; object-fit: contain;
   transition: transform .4s var(--ease), filter .4s; }
-.nav-logo img:hover { transform: rotate(20deg) scale(1.08);
+.nav-logo img:hover { transform: scale(1.10);
   filter: drop-shadow(0 0 8px rgba(168,237,255,.6)); }
 .nav-back {
   font-size: .72rem; letter-spacing: .2em; text-transform: uppercase;

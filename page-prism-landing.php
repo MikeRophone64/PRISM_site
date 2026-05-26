@@ -778,7 +778,7 @@ footer::before {
 }
 .footer-logo img:hover {
   filter: drop-shadow(0 0 10px rgba(168,237,255,0.5));
-  transform: rotate(15deg);
+  transform: scale(1.10);
 }
 .footer-mission {
   font-size: 0.73rem; font-weight: 300;
