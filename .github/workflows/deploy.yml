@@ -11,7 +11,7 @@ jobs:
     steps:
       - uses: actions/checkout@v3
 
-      - name: Deploy via SFTP
+      - name: Deploy via SSH
         uses: appleboy/ssh-action@v1.0.0
         with:
           host: ${{ secrets.SSH_HOST }}
@@ -19,4 +19,4 @@ jobs:
           port: ${{ secrets.SSH_PORT }}
           key: ${{ secrets.SSH_PRIVATE_KEY }}
           script: |
-            rsync -avz --delete /github/workspace/ /public/wp-content/themes/hello-biz/
+            rsync -avz --delete $GITHUB_WORKSPACE/ /public/wp-content/themes/hello-biz/
