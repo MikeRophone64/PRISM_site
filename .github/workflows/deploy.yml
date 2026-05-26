@@ -11,12 +11,13 @@ jobs:
     steps:
       - uses: actions/checkout@v3
 
-      - name: Deploy via SSH
-        uses: appleboy/ssh-action@v1.0.0
+      - name: Deploy via SCP
+        uses: appleboy/scp-action@v0.1.7
         with:
           host: ${{ secrets.SSH_HOST }}
           username: ${{ secrets.SSH_USERNAME }}
           port: ${{ secrets.SSH_PORT }}
           key: ${{ secrets.SSH_PRIVATE_KEY }}
-          script: |
-            rsync -avz $GITHUB_WORKSPACE/ /home/www/public/wp-content/themes/prism-theme/
+          source: "."
+          target: /home/www/public/wp-content/themes/prism-theme/
+          rm: false
