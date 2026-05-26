@@ -123,7 +123,7 @@ nav.scrolled {
   transition: transform 0.4s var(--ease), filter 0.4s;
 }
 .nav-logo img:hover {
-  transform: rotate(20deg) scale(1.08);
+  transform: scale(1.10);
   filter: drop-shadow(0 0 8px rgba(168,237,255,0.6));
 }
 .nav-links { display: flex; gap: 2.5rem; list-style: none; }
