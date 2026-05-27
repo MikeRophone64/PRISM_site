@@ -987,9 +987,9 @@ footer::before {
         </div>
         <div class="work-keywords reveal">
           <strong>Bienveillance</strong>
-          <span class="work-keywords-sep">-</span>
+          <span class="work-keywords-sep"> - </span>
           <strong>Disponibilité</strong>
-          <span class="work-keywords-sep">-</span>
+          <span class="work-keywords-sep"> - </span>
           <strong>Étincelle</strong>
         </div>
       </div>
