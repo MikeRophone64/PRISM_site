@@ -495,9 +495,9 @@ nav {
   </a>
   <a href="<?php echo esc_url($url_en); ?>" class="nav-back">Back to site</a>
   <div class="lang-toggle">
-    <a href="<?php echo esc_url($url_fr); ?>">FR</a>
+    <a href="<?php echo esc_url($url_booking_fr); ?>">FR</a>
     <span class="lang-sep"></span>
-    <a href="<?php echo esc_url($url_en); ?>">EN</a>
+    <a href="<?php echo esc_url($url_booking_en); ?>">EN</a>
   </div>
 </nav>
 
