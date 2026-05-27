@@ -966,14 +966,10 @@ footer::before {
     </h2>
     <div class="work-grid">
       <div class="work-video reveal">
-        <?php if ($youtube_id): ?>
-          <iframe src="https://www.youtube.com/embed/<?php echo esc_attr($youtube_id); ?>?rel=0&modestbranding=1"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-            allowfullscreen></iframe>
-        <?php else: ?>
-          <div class="play-btn" aria-label="Lire la vidéo"></div>
-          <span class="work-video-placeholder-label">[ Intégrer votre film ici ]</span>
-        <?php endif; ?>
+        <iframe src="https://www.rushes.cc/embed/a7c9baf5-fdc6-4974-8589-8980204932fe"
+          frameborder="0" allow="autoplay; fullscreen; picture-in-picture"
+          referrerpolicy="strict-origin-when-cross-origin"
+          title="FastMusic VSL"></iframe>
       </div>
       <div class="work-framing">
         <div class="framing-item reveal">
