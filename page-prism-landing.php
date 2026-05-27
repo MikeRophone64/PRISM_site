@@ -652,7 +652,7 @@ section { position: relative; }
 .work-video-col { display: flex; flex-direction: column; }
 .work-keywords {
   display: flex; align-items: center; justify-content: space-between;
-  margin-top: 1.25rem; width: 100%;
+  margin-top: 2rem; width: 100%;
   font-family: var(--font-body);
   font-weight: 500;
   font-size: clamp(1.6rem, 2.4vw, 2.6rem);
