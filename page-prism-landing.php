@@ -651,15 +651,19 @@ section { position: relative; }
 }
 .work-video-col { display: flex; flex-direction: column; }
 .work-keywords {
-  display: flex; align-items: baseline; justify-content: space-between;
+  display: flex; align-items: center; justify-content: space-between;
   margin-top: 1.25rem; width: 100%;
-  font-family: var(--font-display);
+  font-family: var(--font-body);
+  font-weight: 700;
   font-size: clamp(1.6rem, 2.4vw, 2.6rem);
   letter-spacing: 0.06em; text-transform: uppercase;
   color: var(--c-main);
 }
 .work-keywords-sep {
-  color: var(--c-orange); opacity: 0.55; font-size: 0.75em;
+  display: inline-block;
+  width: 1px; height: 1.1em;
+  background: var(--c-orange);
+  flex-shrink: 0;
 }
 .framing-item {
   margin-bottom: 2.5rem; padding-left: 1.5rem;
@@ -986,9 +990,9 @@ footer::before {
         </div>
         <div class="work-keywords reveal">
           <strong>Bienveillance</strong>
-          <span class="work-keywords-sep">—</span>
+          <span class="work-keywords-sep"></span>
           <strong>Disponibilité</strong>
-          <span class="work-keywords-sep">—</span>
+          <span class="work-keywords-sep"></span>
           <strong>Étincelle</strong>
         </div>
       </div>
