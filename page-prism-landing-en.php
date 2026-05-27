@@ -605,20 +605,9 @@ section { position: relative; }
   position: relative; z-index: 1;
 }
 .work-video {
-  aspect-ratio: 16/9; background: #0f0f0f;
+  aspect-ratio: 16/9;
   position: relative; overflow: hidden;
   display: flex; align-items: center; justify-content: center;
-}
-.work-video::before {
-  content: ''; position: absolute; inset: 0;
-  background: linear-gradient(135deg,
-    rgba(3,88,140,0.15), rgba(168,237,255,0.06), rgba(217,100,42,0.08));
-}
-/* Chromatic edge on video frame */
-.work-video::after {
-  content: ''; position: absolute;
-  inset: 0; pointer-events: none;
-  box-shadow: inset 0 0 0 1px rgba(168,237,255,0.12);
 }
 .play-btn {
   width: 72px; height: 72px;
