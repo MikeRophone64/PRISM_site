@@ -649,6 +649,18 @@ section { position: relative; }
 .work-video iframe {
   position: absolute; inset: 0; width: 100%; height: 100%; border: 0;
 }
+.work-video-col { display: flex; flex-direction: column; }
+.work-keywords {
+  display: flex; align-items: baseline; justify-content: space-between;
+  margin-top: 1.25rem; width: 100%;
+  font-family: var(--font-display);
+  font-size: clamp(1.6rem, 2.4vw, 2.6rem);
+  letter-spacing: 0.06em; text-transform: uppercase;
+  color: var(--c-main);
+}
+.work-keywords-sep {
+  color: var(--c-orange); opacity: 0.55; font-size: 0.75em;
+}
 .framing-item {
   margin-bottom: 2.5rem; padding-left: 1.5rem;
   border-left: 1px solid rgba(252,252,252,0.08);
@@ -965,11 +977,20 @@ footer::before {
       Ce que<br>ça <span>donne.</span>
     </h2>
     <div class="work-grid">
-      <div class="work-video reveal">
-        <iframe src="https://www.rushes.cc/embed/a7c9baf5-fdc6-4974-8589-8980204932fe"
-          frameborder="0" allow="autoplay; fullscreen; picture-in-picture"
-          referrerpolicy="strict-origin-when-cross-origin"
-          title="FastMusic VSL"></iframe>
+      <div class="work-video-col">
+        <div class="work-video reveal">
+          <iframe src="https://www.rushes.cc/embed/a7c9baf5-fdc6-4974-8589-8980204932fe"
+            frameborder="0" allow="autoplay; fullscreen; picture-in-picture"
+            referrerpolicy="strict-origin-when-cross-origin"
+            title="FastMusic VSL"></iframe>
+        </div>
+        <div class="work-keywords reveal">
+          <strong>Bienveillance</strong>
+          <span class="work-keywords-sep">—</span>
+          <strong>Disponibilité</strong>
+          <span class="work-keywords-sep">—</span>
+          <strong>Étincelle</strong>
+        </div>
       </div>
       <div class="work-framing">
         <div class="framing-item reveal">
