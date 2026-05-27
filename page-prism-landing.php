@@ -813,6 +813,7 @@ footer::before {
   .steps-row { grid-template-columns: 1fr; }
   .step { border-right: none; border-bottom: 1px solid rgba(252,252,252,0.08); }
   .work-grid { grid-template-columns: 1fr; gap: 3rem; }
+  .work-keywords { font-size: clamp(0.85rem, 4vw, 1.2rem); letter-spacing: 0.03em; gap: 0.5rem; }
   .mechanism-statement { flex-direction: column; padding: 2.5rem 1.5rem; }
   #mechanism, #travaux, #contact, #founder { padding: 5rem 0; }
   footer { flex-direction: column; gap: 1.5rem; text-align: center; }

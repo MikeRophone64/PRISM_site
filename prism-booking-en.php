@@ -78,6 +78,7 @@ nav {
   text-decoration: none; transition: background .2s, color .2s; line-height: 1;
 }
 .lang-toggle a:hover { color: var(--c-main); background: rgba(252,252,252,.06); }
+.lang-toggle a.active { background: var(--c-orange) !important; color: var(--c-main) !important; }
 .lang-toggle .lang-sep { width: 1px; background: rgba(252,252,252,.15); align-self: stretch; }
 
 /* ── PAGE LAYOUT ── */
@@ -497,7 +498,7 @@ nav {
   <div class="lang-toggle">
     <a href="<?php echo esc_url($url_booking_fr); ?>">FR</a>
     <span class="lang-sep"></span>
-    <a href="<?php echo esc_url($url_booking_en); ?>">EN</a>
+    <a href="<?php echo esc_url($url_booking_en); ?>" class="active">EN</a>
   </div>
 </nav>
 
