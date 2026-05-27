@@ -974,15 +974,15 @@ footer::before {
       <div class="work-framing">
         <div class="framing-item reveal">
           <p class="framing-label">The need</p>
-          <p class="framing-text"><strong>[Client name, sector]</strong> — world-class expertise, invisible externally. Their recruitment pipeline had stalled. Their market differentiation was absent from their commercial narrative.</p>
+          <p class="framing-text"><strong>Akpo — Fast Music</strong> — music workshop facilitator for children. Every week: 5 hours of cold calls to leisure centres and youth spaces. A near-empty calendar. Real expertise, but no infrastructure to sell it.</p>
         </div>
         <div class="framing-item reveal reveal-delay-1">
           <p class="framing-label">What we built</p>
-          <p class="framing-text">A strategic 3-minute Anthem Film, preceded by a 2-week diagnostic and a Keywords architecture. Three LinkedIn assets for the sales team. 15 editorial portraits.</p>
+          <p class="framing-text">A VSL filmed in immersion during a live workshop — kids, creativity, raw energy. Embedded on a landing page with a contact section. Automated email system with a direct link to the page.</p>
         </div>
         <div class="framing-item reveal reveal-delay-2">
           <p class="framing-label">The result</p>
-          <p class="framing-text"><strong>+[X]% qualified applications</strong> in 60 days. The film became the primary closing tool for their commercial team. Two new companies referred within 90 days.</p>
+          <p class="framing-text"><strong>−80% of sales time</strong>: from 5h down to 1h per week. 4 new workshops signed in 2026, versus just 1 before deployment. The VSL replaces the cold call — it converts on its own.</p>
         </div>
       </div>
     </div>

@@ -974,15 +974,15 @@ footer::before {
       <div class="work-framing">
         <div class="framing-item reveal">
           <p class="framing-label">Le besoin</p>
-          <p class="framing-text"><strong>[Nom du client, secteur]</strong> — une expertise de pointe invisible à l'externe. Leur pipeline de recrutement stagnait. Leur différenciation marché inexistante dans le discours commercial.</p>
+          <p class="framing-text"><strong>Akpo — Fast Music</strong> — animateur de workshops musicaux pour enfants. Chaque semaine : 5 heures d'appels à froid vers des centres de loisirs et espaces jeunesse. Un calendrier quasi vide. Une expertise réelle, mais aucune infrastructure pour la vendre.</p>
         </div>
         <div class="framing-item reveal reveal-delay-1">
           <p class="framing-label">Ce qu'on a construit</p>
-          <p class="framing-text">Un Film Anthem stratégique de 3 minutes, précédé d'un diagnostic de 2 semaines et d'une architecture Keywords. Trois assets LinkedIn pour l'équipe commerciale. 15 portraits éditoriaux.</p>
+          <p class="framing-text">Un VSL filmé en immersion pendant un atelier — enfants, créativité, énergie brute. Intégré sur une landing page avec section contact. Système d'emailing automatisé avec lien direct vers la page.</p>
         </div>
         <div class="framing-item reveal reveal-delay-2">
           <p class="framing-label">Le résultat</p>
-          <p class="framing-text"><strong>+[X]% de candidatures qualifiées</strong> en 60 jours. Le film est devenu le principal outil de closing de leur équipe commerciale. Deux nouvelles entreprises référées dans les 90 jours.</p>
+          <p class="framing-text"><strong>−80% de temps commercial</strong> : de 5h à 1h par semaine. 4 nouveaux ateliers signés en 2026, contre 1 seul avant le déploiement. Le VSL remplace l'appel à froid — il convertit seul.</p>
         </div>
       </div>
     </div>
