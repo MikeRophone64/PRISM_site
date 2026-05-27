@@ -578,7 +578,7 @@ nav {
           </div>
           <div class="form-group">
             <label class="form-label" for="f-email">Email *</label>
-            <input class="form-input" type="email" id="f-email" placeholder="vous@entreprise.com" required>
+            <input class="form-input" type="email" id="f-email" placeholder="vous@votreentreprise.com" required>
           </div>
         </div>
         <div class="form-group">
