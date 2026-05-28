@@ -917,7 +917,7 @@ footer::before {
   <?php else: ?>
   <div class="hero-video-placeholder">[ Remplacer par votre film — vidéo de fond ]</div>
   <?php endif; ?>
-  <div class="video-label">Film · Background</div>
+  <!--<div class="video-label">Film · Background</div>-->
   <div class="hero-content">
     <p class="hero-eyebrow">PRISM Filmmaking</p>
     <h1 class="hero-h1">Votre expertise<br>devient votre<br><em>avantage.</em></h1>
