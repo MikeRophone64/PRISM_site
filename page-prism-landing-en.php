@@ -111,7 +111,7 @@ nav {
   transition: background 0.5s var(--ease), backdrop-filter 0.5s;
 }
 nav.scrolled {
-  background: rgba(13,13,13,0.94);
+  background: rgba(13,13,13,0.55);
   backdrop-filter: blur(16px);
   -webkit-backdrop-filter: blur(16px);
   border-bottom: 1px solid rgba(255,255,255,0.05);
@@ -808,6 +808,7 @@ footer::before {
 @media (max-width: 900px) {
   nav { padding: 1rem 1.5rem; }
   .nav-links { display: none; }
+  .nav-cta { white-space: nowrap; padding: 0.5rem 1rem; font-size: 0.65rem; }
   #hero { padding: 0 1.5rem 3rem; }
   .section-inner { padding: 0 1.5rem; }
   .founder-grid { grid-template-columns: 1fr; gap: 3rem; }
@@ -1051,9 +1052,10 @@ footer::before {
 <script>
 // Nav scroll effect
 const nav = document.getElementById('navbar');
-window.addEventListener('scroll', () => {
-  nav.classList.toggle('scrolled', window.scrollY > 60);
-}, { passive: true });
+nav.classList.remove('scrolled'); // always start transparent
+const updateNav = () => nav.classList.toggle('scrolled', window.scrollY > 60);
+window.addEventListener('scroll', updateNav, { passive: true });
+window.addEventListener('load', updateNav, { once: true });
 
 // Scroll reveal — IntersectionObserver
 const revealEls = document.querySelectorAll('.reveal');
