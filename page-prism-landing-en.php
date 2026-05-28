@@ -317,6 +317,27 @@ nav.scrolled {
   font-size: 0.65rem; letter-spacing: 0.35em; text-transform: uppercase;
   color: rgba(252,252,252,0.08);
 }
+.hero-yt-wrap {
+  position: absolute; inset: 0; z-index: 0;
+  overflow: hidden; pointer-events: none;
+}
+.hero-yt-wrap::after {
+  content: '';
+  position: absolute; inset: 0; z-index: 1; pointer-events: none;
+  background: linear-gradient(to top,
+    rgba(13,13,13,0.97) 0%,
+    rgba(13,13,13,0.3)  55%,
+    rgba(13,13,13,0.6)  100%);
+}
+.hero-yt-wrap iframe {
+  position: absolute;
+  top: 50%; left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100vw;  height: 56.25vw;   /* fill width on landscape */
+  min-height: 100%; min-width: 177.78vh; /* fill height on portrait */
+  border: 0; pointer-events: none;
+  max-width: none !important;
+}
 .video-label {
   position: absolute; top: 68px; right: 2.5rem; z-index: 5;
   font-size: 0.6rem; letter-spacing: 0.35em; text-transform: uppercase;
@@ -858,7 +879,16 @@ footer::before {
   <div class="hero-accent"></div>
   <div class="hero-prism-edge"></div>
   <!--<div class="hero-bar-top"></div>-->
+  <?php if (!empty($hero_film)): ?>
+  <div class="hero-yt-wrap">
+    <iframe src="https://www.rushes.cc/embed/<?php echo esc_attr($hero_film); ?>?nohd=1&novolume=1&nofreeze=1&autoplay=1&muted=1&loop=1&nocontrols=1"
+      frameborder="0" allow="autoplay; fullscreen; picture-in-picture"
+      referrerpolicy="strict-origin-when-cross-origin"
+      title="Hero background film"></iframe>
+  </div>
+  <?php else: ?>
   <div class="hero-video-placeholder">[ Replace with your film — background video ]</div>
+  <?php endif; ?>
   <div class="video-label">Film · Background</div>
   <div class="hero-content">
     <p class="hero-eyebrow">PRISM Filmmaking</p>
@@ -869,7 +899,7 @@ footer::before {
       <a href="#mechanism" class="btn-ghost">See the process</a>
     </div>
   </div>
-  <div class="hero-bar-bottom"></div>
+  <!--<div class="hero-bar-bottom"></div>-->
 </section>
 
 <div class="spectrum-divider"></div>
