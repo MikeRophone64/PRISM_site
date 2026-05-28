@@ -111,7 +111,7 @@ nav {
   transition: background 0.5s var(--ease), backdrop-filter 0.5s;
 }
 nav.scrolled {
-  background: rgba(13,13,13,0.55);
+  background: rgba(13,13,13,0.65);
   backdrop-filter: blur(16px);
   -webkit-backdrop-filter: blur(16px);
   border-bottom: 1px solid rgba(255,255,255,0.05);
@@ -857,7 +857,7 @@ footer::before {
   <div class="grain"></div>
   <div class="hero-accent"></div>
   <div class="hero-prism-edge"></div>
-  <div class="hero-bar-top"></div>
+  <!--<div class="hero-bar-top"></div>-->
   <div class="hero-video-placeholder">[ Replace with your film — background video ]</div>
   <div class="video-label">Film · Background</div>
   <div class="hero-content">
