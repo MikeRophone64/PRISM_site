@@ -604,6 +604,7 @@ section { position: relative; }
   gap: 5rem; align-items: center; margin-top: 4rem;
   position: relative; z-index: 1;
 }
+.work-framing { min-width: 0; padding-right: 1.5rem; }
 .work-video {
   aspect-ratio: 16/9;
   position: relative; overflow: hidden;
@@ -638,13 +639,13 @@ section { position: relative; }
 .work-video iframe {
   position: absolute; inset: 0; width: 100%; height: 100%; border: 0;
 }
-.work-video-col { display: flex; flex-direction: column; }
+.work-video-col { display: flex; flex-direction: column; min-width: 0; }
 .work-keywords {
   display: flex; align-items: center; justify-content: space-between;
   margin-top: 2rem; width: 100%;
   font-family: var(--font-body);
   font-weight: 500;
-  font-size: clamp(1.6rem, 2.4vw, 2.6rem);
+  font-size: clamp(0.85rem, 1.4vw, 1.25rem);
   letter-spacing: 0.06em; text-transform: uppercase;
   color: var(--c-main);
 }
@@ -813,7 +814,7 @@ footer::before {
   .steps-row { grid-template-columns: 1fr; }
   .step { border-right: none; border-bottom: 1px solid rgba(252,252,252,0.08); }
   .work-grid { grid-template-columns: 1fr; gap: 3rem; }
-  .work-keywords { font-size: clamp(0.85rem, 4vw, 1.2rem); letter-spacing: 0.03em; gap: 0.5rem; }
+  .work-keywords { font-size: clamp(0.85rem, 4vw, 1.2rem); letter-spacing: 0.03em; gap: 0.5rem; justify-content: center; flex-wrap: wrap; }
   .mechanism-statement { flex-direction: column; padding: 2.5rem 1.5rem; }
   #mechanism, #travaux, #contact, #founder { padding: 5rem 0; }
   footer { flex-direction: column; gap: 1.5rem; text-align: center; }
