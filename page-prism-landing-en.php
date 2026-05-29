@@ -206,9 +206,10 @@ nav.scrolled {
 }
 .hero-bg {
   position: absolute;
-  inset: 0;
+  top: -5%; left: 0; right: 0; height: 110%;
   background: linear-gradient(135deg, #080808 0%, #101520 45%, #0a0a0a 100%);
   z-index: 0;
+  will-change: transform;
 }
 .hero-bg::after {
   content: '';
@@ -439,8 +440,9 @@ section { position: relative; }
   background: linear-gradient(to top, rgba(217,100,42,0.25), transparent);
 }
 .founder-img-placeholder img {
-  width: 100%; height: 100%; object-fit: cover;
-  position: absolute; inset: 0;
+  width: 100%; height: 110%; object-fit: cover;
+  position: absolute; top: -5%; left: 0; right: 0;
+  will-change: transform;
 }
 /* Chromatic strip accent on image */
 .founder-img-wrap::after {
@@ -1126,6 +1128,38 @@ nav.classList.remove('scrolled'); // always start transparent
 const updateNav = () => nav.classList.toggle('scrolled', window.scrollY > 60);
 window.addEventListener('scroll', updateNav, { passive: true });
 window.addEventListener('load', updateNav, { once: true });
+
+// Hero background parallax — bg moves 5% slower than scroll
+(function () {
+  const heroBg = document.querySelector('.hero-bg');
+  if (!heroBg) return;
+  let rafId = null;
+  function tick() {
+    heroBg.style.transform = 'translateY(' + (window.scrollY * 0.05).toFixed(2) + 'px)';
+    rafId = null;
+  }
+  window.addEventListener('scroll', function () {
+    if (!rafId) rafId = requestAnimationFrame(tick);
+  }, { passive: true });
+})();
+
+// Founder image parallax — image moves 5% slower than scroll
+(function () {
+  const wrap = document.querySelector('.founder-img-wrap');
+  const img  = wrap && wrap.querySelector('.founder-img-placeholder img');
+  if (!img) return;
+  let rafId = null;
+  function tick() {
+    const rect   = wrap.getBoundingClientRect();
+    const offset = ((rect.top + rect.height / 2) - window.innerHeight / 2) * 0.05;
+    img.style.transform = 'translateY(' + offset.toFixed(2) + 'px)';
+    rafId = null;
+  }
+  window.addEventListener('scroll', function () {
+    if (!rafId) rafId = requestAnimationFrame(tick);
+  }, { passive: true });
+  tick();
+})();
 
 // Scroll reveal — IntersectionObserver
 const revealEls = document.querySelectorAll('.reveal');
